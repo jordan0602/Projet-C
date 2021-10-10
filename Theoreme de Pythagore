@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void)
+{
+    float a, b, rep;
+    printf("Quel est la premiere longueur en cm ?");
+    scanf("%f", &a);
+    printf("Quel est la deuxieme longueur en cm ?");
+    scanf("%f", &b);
+    rep = pow(a, b);
+    rep = sqrt(pow(a, 2) + pow(b, 2));
+    printf("L'hypotenuse de votre triangle rectangle est de : %.2f cm\n", rep);
+    return 0;
+}
