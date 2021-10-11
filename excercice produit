@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, rep; //déclaration variable
+    printf("Quel est votre premier nombre ?");
+    scanf("%i", &a); //on récupère le premier nombre saisi
+    printf("Quel est votre deuxieme nombre?");
+    scanf("%i", &b); //deuxieme nombre saisi
+    rep = (a * b); // on multiplie les deux nombres données
+    printf("votre multiplication donne : %i", rep); //on print le resultat
+    return 0;
+}
