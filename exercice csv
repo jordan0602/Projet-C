@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+
+{
+
+    FILE *file = fopen("plaque.csv", "a");
+
+    if(!file)
+    {
+        return 1;
+    }
+
+    char modele[50] ;
+    char plaque[50] ;
+
+    printf("Quel est le modele? \n ");
+    scanf("%s", modele);
+    printf("Quelle est la plaque ? \n ");
+    scanf("%s", plaque);
+    fprintf(file, "%s, %s \n", modele, plaque);
+
+
+    fclose(file);
+}
