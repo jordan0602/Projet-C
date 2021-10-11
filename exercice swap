@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void swap(int *a, int *b);
+
+int main(void)
+{
+int x ; //déclaration
+int y ; //déclaration
+printf("Qu'est-ce que x ?\n");
+scanf("%i", &x); //on récupère le premier nombre saisi comme variable
+printf("qu'est-ce que y ?\n");
+scanf("%i", &y); //on récupère le deuxieme nombre saisi comme variable
+printf("x est : %i et y est : %i (avant inversion)\n", x, y); //on print les deux nombres saisi avant inversion
+swap(&x, &y); //on inverse la valeur des deux variables
+printf("x est devenu %i et y est devenu %i apres inversion\n", x, y);
+}
+
+void swap(int *a, int *b) //fonction permettant le swap
+{
+int tmp = *a;
+*a = *b;
+*b = tmp;
+}
